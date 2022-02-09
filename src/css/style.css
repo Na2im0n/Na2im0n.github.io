@@ -1,0 +1,248 @@
+body{
+    font-family: arial, sans-serif;
+}
+nav{
+    width: 100%;
+    height: 60px;
+    background: #344051;
+    }
+
+.logo{
+    color: #fff;
+    float: left;
+    font-size: 30px;
+    line-height: 60px;
+    padding-left: 388px;
+}
+.menu{
+    float: left;
+    padding-left: 432px;
+}
+.menu li{
+    float: left;
+    line-height: 60px;
+    color: #fff;
+    margin-right: 40px;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.main{
+    width: 100%;
+    height: calc(100% - 60px);
+    background: url(../img/boy.png) 90% 100%/auto 90% no-repeat  ,url(../img/bg.jpg) center/cover no-repeat;
+}
+.title__container{
+    float: left;
+    margin: 432px 0px 0px 404px;
+    color: #2c384a;
+    text-align: center;
+}
+.title__container h1{
+    font-size: 60px;
+    font-weight: bold;
+}
+.title__container h4{
+    margin-top: 40px;
+    font-size: 22px;
+    color: #79818d;
+}
+.title__container input{
+    height: 40px;
+    text-align: center;
+    border: 2px solid #6d7682;
+    background: none;
+    border-radius: 5px;
+    color: #6d7682;
+    font-size: 13px;
+    padding: 0 16px;
+    margin: 58px 14px 0px 14px;
+}
+.aboutme{
+    text-align: center;
+    color: #263244;
+}
+.aboutme h2 {
+    margin: 110px 0px 32px 0px;
+    font-size: 28px;   
+    font-weight: bold;
+}
+.author{
+    width: 202px;
+    border-radius: 50% 50%;
+    margin: 32px 0px;
+}
+.my{
+    text-align: justify;
+    padding: 25px 0;
+    font-size: 13px;
+    color: #3f495a;
+    margin: 0 595px;
+}
+.resume{
+    border: 2px solid #6f707e;
+    border-radius: 5px;
+    width: 153px;
+    height: 33px;
+    background: none;
+    padding: 7px 0px;
+    color: #6f707e;
+    margin: 0 auto;
+    font-size: 13 px;   
+}
+.doit{
+    font-size: 16px;
+    width: 100%;
+    height: 520px;
+    background: url(../img/ido.jpg) center/cover no-repeat;
+    text-align: center;
+    color: #263244;
+}
+.ido h2 {
+    padding-top: 105px;
+    margin: 100px 0px 32px 0px;
+    font-size: 28px;   
+    font-weight: bold;
+}
+.can {
+    text-align: center;
+    margin: auto;
+    width: 1178px;
+    height: 155px;
+    padding-top: 110px;
+}
+.men img{
+    margin: 0 120px;
+}
+.ceo {
+    margin: 0px 42px 0px 42px;
+    width: 209px;
+    float: left;
+    height: 155px;
+}
+.ceo h4 {
+    font-size: 22px;
+    color: #cf7600;
+    font-weight: bold;   
+    padding: 40px 0px 20px 0px;
+}
+.web {
+    margin: 0 42px;
+    width: 209px;
+    float: left;
+    height: 155px;
+}
+.web h4 {
+    font-size: 22px;
+    color: #cf7600;
+    font-weight: bold;   
+    padding: 40px 0px 20px 0px;
+}.dev {
+    margin: 0 42px;
+    width: 209px;
+    float: left;
+}
+.dev h4 {
+    font-size: 22px;
+    color: #cf7600;
+    font-weight: bold;   
+    padding: 40px 0px 20px 0px;
+}.mark {
+    margin: 0 42px;
+    width: 209px;
+    float: left;
+}
+.mark h4 {
+    font-size: 22px;
+    color: #cf7600;
+    font-weight: bold;   
+    padding: 40px 0px 20px 0px;
+}
+.keys {
+    font-size: 16px;
+    width: 100%;
+    text-align: center;
+    color: #384354;
+}
+.site {
+    width: 1366px;
+    margin: auto;
+    margin-bottom: 10px;
+}
+.look h2 {
+    padding-top: 110px;
+    margin-bottom: 32px;
+    font-size: 28px;   
+    font-weight: bold;
+}
+.look p{
+    margin: 40px 0;
+}
+.keys h3{
+    font-size: 24px;
+    font-weight: bold;
+}
+.block {
+    margin-top: 40px;
+    text-align: left;
+    height: 190px;
+}
+.client {
+    float: left;
+    margin-right: 84px;
+}
+.client p{
+    margin: 20px 0;
+}
+.name  p{
+    margin-top: 14px;
+}
+.client button{
+    border: 2px solid color#63b5ae;
+    background:#63b5ae;
+    border-radius: 5px;
+    width: 202px;
+    height: 42px;
+    font-size: 16px;
+    color: white;
+}
+.cash {
+    margin-top: 210px;
+    font-size: 16px;
+    width: 100%;
+    text-align: center;
+    color: #1c2534;
+    border: 2px solid #6d7682;
+    font-weight: bold;
+    height: auto;
+}
+.cash h1{
+    font-size: 28px;
+    font-weight: bold;
+}
+.cash h2{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    margin-top: 10px;
+}
+.typ {
+    margin: auto;
+    width: 884px;
+    height: 515px;
+    margin-top: 60px;
+    text-align: left;
+}
+.typ select{
+    margin-bottom: 40px;
+    border: 2px solid #eeeeee;
+    background: #eeeeee;
+    width: 100%;
+    height: 60px;
+    font-size: 16px;
+}
+.typ th {
+    text-align: right;
+}
+.typ tr {
+    font-size: 20px; 
+}
