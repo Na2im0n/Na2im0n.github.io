@@ -6,6 +6,7 @@
     <meta name="description" content="Это моя первая страница...">
     <meta name="author" content="Maksim">
     <meta name="robots" content="noindex, nofollow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:title" content="Это моя первая страница...">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
@@ -13,217 +14,249 @@
 </head>
 
 <body>
-<header>
-    <nav>
-    <div class="logo">Максим Назимков</div>
-    <div class="menu"><ul>
-        <li>Обо мне</li>
-        <Li>Услуги</Li>
-        <Li>Кейсы</Li>
-        <Li>Прайс</Li>
-        <Li>Отзывы</Li>
-        <Li>Контакты</Li>
-    </ul></div>
-    </nav>
-    
+   <div class="preloader">
+  <div class="preloader__row">
+    <div class="preloader__item"></div>
+    <div class="preloader__item"></div>
+  </div>
+</div>
+   
+    <header>
+        <nav>
+            <div class="logo">Максим Назимков</div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#">Обо мне</a></li>
+                    <Li><a href="#">Услуги</a></Li>
+                    <Li><a href="#">Кейсы</a></Li>
+                    <Li><a href="#">Прайс</a></Li>
+                    <Li><a href="#">Отзывы</a></Li>
+                    <Li><a href="#">Контакты</a></Li>
+                </ul>
+            </div>
+        </nav>
     </header>
-    
-    <div class="main"><div class="title__container">
-        <h1>Привет <br> Я Максим Назимков</h1>
-        <h4>Фулл стек веб-разработчик</h4>
-        <input type="submit" value="Обо мне">
-        <input type="submit" value="Мои работы">
-    </div></div>
-    
-    
-    <div class="about"><div class="aboutme">
-        <h2>ОБО МНЕ</h2>
-        <img src="img/%D0%A7%D0%B5%D1%80%D1%82%D0%B0%20%D0%B7%D0%B0%D0%B3%D0%BE%D0%BB%D0%BE%D0%B2%D0%BA%D0%B0.png" alt="линия">
-        <p><img class="author" src="img/%D0%B3%D0%B2.png" alt="фото владельца"></p>
-        <p class="my">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, iste. Illum atque explicabo ab voluptatem dolor distinctio, adipisci porro magni temporibus aut tempora omnis saepe sequi inventore amet voluptas. Voluptas dicta, laboriosam rem aperiam alias?</p>
-        <p class="my">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At eveniet veniam reprehenderit voluptates quasi voluptas minus nulla! Expedita cum sapiente deserunt perspiciatis odit ullam nihil dolor commodi inventore, tenetur minima nostrum dignissimos odio totam quo?</p>
-        <div class="resume">
-        <img src="img/%D0%B8%D0%BA%D0%BE%D0%BD%D0%BA%D0%B0.png" alt="иконка">
-        <input type="submit" value="Скачать резюме"
-        ></div>
-    </div></div>
-    
-    
-    <div class="doit"><div class="ido">
-        <h2>ЧТО Я УМЕЮ</h2>
-        <img src="img/%D0%A7%D0%B5%D1%80%D1%82%D0%B0%20%D0%B7%D0%B0%D0%B3%D0%BE%D0%BB%D0%BE%D0%B2%D0%BA%D0%B0.png" alt="линия">
-        <div class="can">  
-        <div class="men">  
-        <img src="img/%D1%80%D0%B0%D0%BA%D0%B5%D1%82%D0%B0.png" alt="ракета">
-        <img src="img/%D0%BD%D0%BE%D1%83%D1%82.png" alt="ноутбук">
-        <img src="img/%D0%B7%D0%BD%D0%B0%D0%BA.png" alt="знак">
-        <img src="img/%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%BE%D1%84%D0%BE%D0%BD.png" alt="граммафон">
-        </div>
-        <div class="ceo">
-        <h4>СЕО-оптимизация</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero nam eaque laudantium cum temporibus, tempora!</p>
-        </div>
-        <div class="web">
-        <h4>Веб-дизайн</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero nam eaque laudantium cum temporibus, tempora!</p>
-        </div>
-        <div class="dev">
-        <h4>Разработка</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero nam eaque laudantium cum temporibus, tempora!</p>
-        </div>
-        <div class="mark">
-        <h4>Маркетинг</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero nam eaque laudantium cum temporibus, tempora!</p>
-        </div>
-    </div></div></div>
-       
-    
-    <div class="keys"><div class="site">
-        <div class="look">
-            <h2>КЕЙСЫ</h2>
+
+    <main>
+        <section class="main">
+            <div class="title__container">
+                <h1>Привет <br> Я Максим Назимков</h1>
+                <h4>Фулл стек веб-разработчик</h4>
+                <input type="button" value="Обо мне">
+                <input type="button" value="Мои работы">
+            </div>
+        </section>
+    </main>
+    <section class="about">
+        <div class="aboutme">
+            <h2>ОБО МНЕ</h2>
             <img src="img/%D0%A7%D0%B5%D1%80%D1%82%D0%B0%20%D0%B7%D0%B0%D0%B3%D0%BE%D0%BB%D0%BE%D0%B2%D0%BA%D0%B0.png" alt="линия">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo vero maiores reprehenderit rem ullam molestiae quidem odit ipsa temporibus sed.</p>
-            <img src="img/%D0%91%D0%B5%D0%B7%20%D0%B8%D0%BC%D0%B5%D0%BD%D0%B8.png" alt="сайт гугла">
+            <p><img class="author" src="img/%D0%B3%D0%B2.png" alt="фото владельца"></p>
+            <p class="my">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, iste. Illum atque explicabo ab voluptatem dolor distinctio, adipisci porro magni temporibus aut tempora omnis saepe sequi inventore amet voluptas. Voluptas dicta, laboriosam rem aperiam alias?</p>
+            <p class="my">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At eveniet veniam reprehenderit voluptates quasi voluptas minus nulla! Expedita cum sapiente deserunt perspiciatis odit ullam nihil dolor commodi inventore, tenetur minima nostrum dignissimos odio totam quo?</p>
+            <div class="resume">
+                <button type="button"><img src="img/%D0%B8%D0%BA%D0%BE%D0%BD%D0%BA%D0%B0.png" alt="иконка"> Скачать резюме</button>
+            </div>
         </div>
-        <div class="block">
-        <div class="client">
-            <h3>CLIENT:</h3>
-            <p>Какая-то компания</p>
-            <h3>WEBSITE:</h3>
-            <p>https://www.google.com/</p>
-            <form action="https://google.com" target="_blank"> <button>VISIT LIVE SITE</button>
-            </form>
+    </section>
+
+
+    <section class="doit">
+        <div class="ido">
+            <h2>ЧТО Я УМЕЮ</h2>
+            <img src="img/%D0%A7%D0%B5%D1%80%D1%82%D0%B0%20%D0%B7%D0%B0%D0%B3%D0%BE%D0%BB%D0%BE%D0%B2%D0%BA%D0%B0.png" alt="линия">
+            <div class="can">
+                <div class="men">
+                    <img src="img/%D1%80%D0%B0%D0%BA%D0%B5%D1%82%D0%B0.png" alt="ракета">
+                    <img src="img/%D0%BD%D0%BE%D1%83%D1%82.png" alt="ноутбук">
+                    <img src="img/%D0%B7%D0%BD%D0%B0%D0%BA.png" alt="знак">
+                    <img src="img/%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%BE%D1%84%D0%BE%D0%BD.png" alt="граммафон">
+                </div>
+                <div class="ceo">
+                    <h4>СЕО-оптимизация</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero nam eaque laudantium cum temporibus, tempora!</p>
+                </div>
+                <div class="web">
+                    <h4>Веб-дизайн</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero nam eaque laudantium cum temporibus, tempora!</p>
+                </div>
+                <div class="dev">
+                    <h4>Разработка</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero nam eaque laudantium cum temporibus, tempora!</p>
+                </div>
+                <div class="mark">
+                    <h4>Маркетинг</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero nam eaque laudantium cum temporibus, tempora!</p>
+                </div>
+            </div>
         </div>
-        <div class="name">
-            <h3>Название проекта</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore non temporibus necessitatibus odio explicabo sunt, cum incidunt maxime doloribus? Libero explicabo quibusdam iusto voluptates quod, beatae rerum neque nihil possimus doloremque fuga, nulla, omnis quisquam odio consequatur blanditiis esse itaque nam architecto sint inventore quaerat fugiat. Saepe odit modi facere. Voluptas enim aperiam odit, quia culpa minima dolor, tempore similique!</p>
-        </div></div></div></div>
-    
-    
-    <div class="cash">
+    </section>
+
+
+    <section class="keys">
+        <div class="site">
+            <div class="look">
+                <h2>КЕЙСЫ</h2>
+                <img src="img/%D0%A7%D0%B5%D1%80%D1%82%D0%B0%20%D0%B7%D0%B0%D0%B3%D0%BE%D0%BB%D0%BE%D0%B2%D0%BA%D0%B0.png" alt="линия">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo vero maiores reprehenderit rem ullam molestiae quidem odit ipsa temporibus sed.</p>
+                <img class="google" src="img/%D0%91%D0%B5%D0%B7%20%D0%B8%D0%BC%D0%B5%D0%BD%D0%B8.png" alt="сайт гугла">
+            </div>
+            <div class="block">
+                <div class="client">
+                    <h3>CLIENT:</h3>
+                    <p>Какая-то компания</p>
+                    <h3>WEBSITE:</h3>
+                    <p>https://www.google.com/</p>
+                    <form action="https://google.com" target="_blank"> <button>VISIT LIVE SITE</button>
+                    </form>
+                </div>
+                <div class="name">
+                    <h3>Название проекта</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore non temporibus necessitatibus odio explicabo sunt, cum incidunt maxime doloribus? Libero explicabo quibusdam iusto voluptates quod, beatae rerum neque nihil possimus doloremque fuga, nulla, omnis quisquam odio consequatur blanditiis esse itaque nam architecto sint inventore quaerat fugiat. Saepe odit modi facere. Voluptas enim aperiam odit, quia culpa minima dolor, tempore similique!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="cash">
         <h1>Расчет стоимости</h1>
         <div class="typ">
-        <h2>ТИП САЙТА</h2>
-        <select name="list1" id="list">
-            <option value="opt1" disabled selected>Выберите пункт...</option>
-            <option value="opt2">Обычный</option>
-            <option value="opt3">Средний</option>
-            <option value="opt4">Высокий</option>
-        </select>
-        <h2>ДИЗАЙН</h2>
-        <select name="list2" id="list1">
-            <option value="opt1" disabled selected>Выберите пункт...</option>
-            <option value="opt2">Обычный</option>
-            <option value="opt3">Средний</option>
-            <option value="opt4">Высокий</option>
-        </select>
-        <h2>АДАПТИВНОСТЬ</h2>
-         <select name="list2" id="list2">
-            <option value="opt1" disabled selected>Выберите пункт...</option>
-            <option value="opt2">Обычный</option>
-            <option value="opt3">Средний</option>
-            <option value="opt4">Высокий</option>
-        </select>
-        <img src="img/%D0%BB%D0%B8%D0%BD%D0%B8%D1%8F%20%D0%BF%D0%BE%D0%B4%D0%B8%D1%82%D0%BE%D0%B3%D0%B0.png" alt="линия">
-        <table border="0" width="100%">
-        <tr>
-            <td>Сроки</td>
-            <th> 0 </th>
-        </tr>
-        <tr>
-            <td>Стоимость</td>
-            <th> 0 </th>
-        </tr>  
-    </table>
-    </div></div>
+            <h2>ТИП САЙТА</h2>
+            <select name="list1" id="list">
+                <option value="opt1" disabled selected>Выберите пункт...</option>
+                <option value="opt2">Обычный</option>
+                <option value="opt3">Средний</option>
+                <option value="opt4">Высокий</option>
+            </select>
+            <h2>ДИЗАЙН</h2>
+            <select name="list2" id="list1">
+                <option value="opt1" disabled selected>Выберите пункт...</option>
+                <option value="opt2">Обычный</option>
+                <option value="opt3">Средний</option>
+                <option value="opt4">Высокий</option>
+            </select>
+            <h2>АДАПТИВНОСТЬ</h2>
+            <select name="list2" id="list2">
+                <option value="opt1" disabled selected>Выберите пункт...</option>
+                <option value="opt2">Обычный</option>
+                <option value="opt3">Средний</option>
+                <option value="opt4">Высокий</option>
+            </select>
+            <img src="img/%D0%BB%D0%B8%D0%BD%D0%B8%D1%8F%20%D0%BF%D0%BE%D0%B4%D0%B8%D1%82%D0%BE%D0%B3%D0%B0.png" alt="линия">
+            <table border="0" width="100%">
+                <tr>
+                    <td>Сроки</td>
+                    <th> 0 </th>
+                </tr>
+                <tr>
+                    <td>Стоимость</td>
+                    <th> 0 </th>
+                </tr>
+            </table>
+        </div>
+    </section>
 
-<div class="static">
+    <section class="static">
         <h2>НЕМНОГО СТАТИСТИКИ</h2>
         <img src="img/%D0%A7%D0%B5%D1%80%D1%82%D0%B0%20%D0%B7%D0%B0%D0%B3%D0%BE%D0%BB%D0%BE%D0%B2%D0%BA%D0%B0.png" alt="линия">
-       <div class="stata">
-        <img src="img/%D1%81%D0%BC%D0%B0%D0%B9%D0%BB.png" alt="улыбка">
-        <img src="img/%D1%81%D0%BA%D0%BE%D0%B1%D0%BA%D0%B8.png" alt="скобки">
-        <img src="img/%D0%B3%D0%B0%D0%BB%D0%BE%D1%87%D0%BA%D0%B0.png" alt="галочка">
-        <img src="img/%D0%BA%D1%83%D0%B1%D0%BE%D0%BA.png" alt="кубок">
+        <div class="stata">
+            <img src="img/%D1%81%D0%BC%D0%B0%D0%B9%D0%BB.png" alt="улыбка">
+            <img src="img/%D1%81%D0%BA%D0%BE%D0%B1%D0%BA%D0%B8.png" alt="скобки">
+            <img src="img/%D0%B3%D0%B0%D0%BB%D0%BE%D1%87%D0%BA%D0%B0.png" alt="галочка">
+            <img src="img/%D0%BA%D1%83%D0%B1%D0%BE%D0%BA.png" alt="кубок">
         </div>
         <div class="xz">
-        <div class="smile">
-        <h2>120</h2>
-        <h4>Счастливых клиентов</h4>
+            <div class="smile">
+                <h2>120</h2>
+                <h4>Счастливых клиентов</h4>
+            </div>
+            <div class="times">
+                <h2>4600</h2>
+                <h4>Часов работы</h4>
+            </div>
+            <div class="okey">
+                <h2>3400</h2>
+                <h4>Проектов завершено</h4>
+            </div>
+            <div class="cup">
+                <h2>23</h2>
+                <h4>Наград получено</h4>
+            </div>
         </div>
-        <div class="times">
-        <h2>4600</h2>
-        <h4>Часов работы</h4>
-        </div>
-        <div class="okey">
-        <h2>3400</h2>
-        <h4>Проектов завершено</h4>
-        </div>
-        <div class="cup">
-        <h2>23</h2>
-        <h4>Наград получено</h4>
-        </div>
-    </div></div>
-    
-    
-    <div class="reviews">
+    </section>
+
+
+    <section class="reviews">
         <h2>ОТЗЫВЫ</h2>
         <img src="img/%D0%A7%D0%B5%D1%80%D1%82%D0%B0%20%D0%B7%D0%B0%D0%B3%D0%BE%D0%BB%D0%BE%D0%B2%D0%BA%D0%B0.png" alt="линия">
         <p></p>
+        <div class="lukoil">
         <img width="100" src="img/%D1%84%D0%BE%D1%82%D0%BA%D0%B0.png" alt="фото отзыва">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia odit voluptates enim dignissimos quo quis quam, amet excepturi quas officiis.</p>
         <p><span>Евгений</span>, ген. директор ООО"Лукойл"</p>
-        <input type="radio" name="text_input1"value="1">
-        <input type="radio" name="text_input1"value="2">
-        <input type="radio" name="text_input1"value="3">
-    </div>
+        </div>
+        <input type="radio" name="text_input1" value="1">
+        <input type="radio" name="text_input1" value="2">
+        <input type="radio" name="text_input1" value="3">
+    </section>
 
 
-    <div class="contacts">
-       
+    <section class="contacts">
         <h2>МОИ КОНТАКТЫ</h2>
         <img src="img/%D0%A7%D0%B5%D1%80%D1%82%D0%B0%20%D0%B7%D0%B0%D0%B3%D0%BE%D0%BB%D0%BE%D0%B2%D0%BA%D0%B0.png" alt="линия    ">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem, corporis sapiente. Neque cum commodi obcaecati!</p>
         <div class="forma">
-           <div class="geo">
-            <img src="img/%D0%B3%D0%B5%D0%BE.png" alt="геолокация">
-            <img src="img/%D0%BA%D0%BE%D0%BD%D0%B2%D0%B5%D1%80%D1%82.png" alt="почта">
-            <img src="img/%D1%82%D1%80%D1%83%D0%B1%D0%B0.png" alt="телефон">
-            <p>г. Вологда</p>        
-            <p>info@companyname.com</p>
-            <p>+7 999 999 99 99</p>
+            <div class="geo">
+                <img src="img/%D0%B3%D0%B5%D0%BE.png" alt="геолокация">
+                <img src="img/%D0%BA%D0%BE%D0%BD%D0%B2%D0%B5%D1%80%D1%82.png" alt="почта">
+                <img src="img/%D1%82%D1%80%D1%83%D0%B1%D0%B0.png" alt="телефон">
+                <p>г. Вологда</p>
+                <p>info@companyname.com</p>
+                <p>+7 999 999 99 99</p>
             </div>
-        <div class="data">
-        <h4>ОСТАВЬТЕ МНЕ СООБЩЕНИЕ</h4>
-        <form action="URL">
-        <input class="eba" type="text" name="name" value="" placeholder="Имя">    
-        <input class="eba" type="text" name="mail" value="" placeholder="E-mail">    
-        <textarea name="messeng" placeholder="Сообщение"></textarea>
-        <p></p>
-        <div class="send">
-        <input type="submit" value="Отправить">
-        </div></form>
+            <div class="data">
+                <h4>ОСТАВЬТЕ МНЕ СООБЩЕНИЕ</h4>
+                <form action="URL">
+                    <input class="eba" type="text" name="name" value="" placeholder="Имя" required>
+                    <input class="eba" type="text" name="mail" value="" placeholder="E-mail" required>
+                    <textarea name="messeng" placeholder="Сообщение"></textarea>
+                    <p></p>
+
+                    <input class="send" type="submit" value="Отправить">
+                </form>
+            </div>
+            <div class="dostup">
+                <form action="https://ru-ru.facebook.com/" target="_blank"> <button><img src="img/%D1%84%D0%B1.png" alt="фейс"></button></form>
+                <form action="https://twitter.com/" target="_blank"><button><img src="img/%D1%82%D0%B2%D0%B8%D1%82%D0%B5%D1%80.png" alt="твит"></button></form>
+                <form action="https://dribbble.com/" target="_blank"><button><img src="img/%D0%BC%D1%8F%D1%87.png" alt="хз"></button></form>
+                <form action="https://securitylab.github.com/" target="_blank"><button><img src="img/%D0%BA%D0%B8%D1%81%D0%B0.png" alt="киса"></button></form>
+                <form action="https://www.instagram.com" target="_blank"><button><img src="img/%D0%B8%D0%BD%D1%81%D1%82.png" alt="инста"></button></form>
+                <form action="https://www.languageinternational.ru/" target="_blank"><button><img src="img/%D0%B8%D0%BD.png" alt="ин"></button></form>
+            </div>
         </div>
-        <div class="dostup">
-            <img src="img/%D1%84%D0%B1.png" alt="фейс">
-            <img src="img/%D1%82%D0%B2%D0%B8%D1%82%D0%B5%D1%80.png" alt="твит">
-            <img src="img/%D0%BC%D1%8F%D1%87.png" alt="хз">
-            <img src="img/%D0%BA%D0%B8%D1%81%D0%B0.png" alt="киса">
-            <img src="img/%D0%B8%D0%BD%D1%81%D1%82.png" alt="инста">
-            <img src="img/%D0%B8%D0%BD.png" alt="ин">
-        </div>
-    </div></div>
+    </section>
+
+    <section class="maps">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d130664.87867734014!2d39.73588150563399!3d59.22205371342709!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46ae9822674da109%3A0x6dbb1a40acc55b31!2z0JLQvtC70L7Qs9C00LAsINCS0L7Qu9C-0LPQvtC00YHQutCw0Y8g0L7QsdC7Lg!5e0!3m2!1sru!2sru!4v1643641102978!5m2!1sru!2sru" width="100%" height="450" allowfullscreen="" loading="lazy"></iframe>
+    </section>
     
-    <div class="maps">
-       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d130664.87867734014!2d39.73588150563399!3d59.22205371342709!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46ae9822674da109%3A0x6dbb1a40acc55b31!2z0JLQvtC70L7Qs9C00LAsINCS0L7Qu9C-0LPQvtC00YHQutCw0Y8g0L7QsdC7Lg!5e0!3m2!1sru!2sru!4v1643641102978!5m2!1sru!2sru" width="100%" height="450" allowfullscreen="" loading="lazy"></iframe>
-    </div>
     <footer>
-       <div class="podval">
-        <p>Copyright © 2022 Максим Назимков. Design by Web</p>
+        <div class="podval">
+            <p>Copyright © 2022 Максим Назимков. Design by Web</p>
         </div>
     </footer>
+    
+    <script>
+    window.onload = function () {
+      document.body.classList.add('loaded_hiding');
+      window.setTimeout(function () {
+        document.body.classList.add('loaded');
+        document.body.classList.remove('loaded_hiding');
+      }, 500);
+    }
+  </script>
 </body>
 
 </html>
-
-
+<!--теги 5, паалакс эффект на статистику, лоаде--> 

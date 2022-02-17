@@ -1,52 +1,81 @@
-body{
+body {
     font-family: arial, sans-serif;
 }
-nav{
+
+nav {
     width: 100%;
     height: 60px;
     background: #344051;
-    }
+    position: fixed;
+    z-index: 1;
+}
 
-.logo{
+.logo {
     color: #fff;
     float: left;
     font-size: 30px;
     line-height: 60px;
     padding-left: 388px;
+    -webkit-animation: comming 2s ease;
+    -o-animation: comming 2s ease;
+    animation: comming 2s ease;
 }
-.menu{
+
+main {
+    width: 100%;
+    height: 100%;
+}
+
+.menu {
     float: left;
     padding-left: 432px;
 }
-.menu li{
+
+.menu li {
     float: left;
     line-height: 60px;
     color: #fff;
     margin-right: 40px;
     font-size: 16px;
     text-transform: uppercase;
+    -webkit-animation: topshift 0.4s ease forwards;
+    -o-animation: topshift 0.4s ease forwards;
+    animation: topshift 0.4s ease forwards;
+    opacity: 0;
 }
-.main{
+
+.main {
     width: 100%;
-    height: calc(100% - 60px);
-    background: url(../img/boy.png) 90% 100%/auto 90% no-repeat  ,url(../img/bg.jpg) center/cover no-repeat;
+    height: 100%;
+    background: url(../img/boy.png) 90% 100%/auto 90% no-repeat, url(../img/bg.jpg) center/cover no-repeat;
 }
-.title__container{
+
+.title__container {
     float: left;
     margin: 432px 0px 0px 404px;
     color: #2c384a;
     text-align: center;
+    opacity: 0;
+    -webkit-animation: titlemove 1s ease forwards;
+    -o-animation: titlemove 1s ease forwards;
+    animation: titlemove 1s ease forwards;
+    -webkit-animation-delay: 2s;
+    -o-animation-delay: 2s;
+    animation-delay: 2s;
 }
-.title__container h1{
+
+.title__container h1 {
     font-size: 60px;
     font-weight: bold;
 }
-.title__container h4{
+
+.title__container h4 {
     margin-top: 40px;
     font-size: 22px;
     color: #79818d;
 }
-.title__container input{
+
+.title__container input {
     height: 40px;
     text-align: center;
     border: 2px solid #6d7682;
@@ -57,109 +86,241 @@ nav{
     padding: 0 16px;
     margin: 58px 14px 0px 14px;
 }
-.aboutme{
+
+.menu li a {
+    transition: all 0.1s;
+    color: white;
+    transform: scale(1);
+    display: inline-block;
+}
+
+.menu li a:visited {
+    color: white;
+}
+
+.menu li a:hover {
+    color: #e88604;
+}
+
+.menu li a:active {
+    transform: scale(1.1);
+}
+
+.title__container input {
+    transition: all 0.2s;
+    transform: scale(1)
+}
+
+.title__container input:hover {     
+    background: #344051;
+    color: white;
+}
+
+.title__container input:active {
+    transform: scale(1.1)
+}
+
+@keyframes comming {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes topshift {
+    from {
+        opacity: 0;
+        margin-top: -80px;
+    }
+
+    to {
+        opacity: 1;
+        margin-top: 0px;
+    }
+}
+
+.menu li:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.menu li:nth-child(3) {
+    animation-delay: 0.8s;
+}
+
+.menu li:nth-child(4) {
+    animation-delay: 1.2s;
+}
+
+.menu li:nth-child(5) {
+    animation-delay: 1.6s;
+}
+
+.menu li:nth-child(6) {
+    animation-delay: 2s;
+}
+
+@keyframes titlemove {
+    from {
+        opacity: 0;
+        margin-left: -500px;
+    }
+
+    to {
+        opacity: 1;
+        margin-left: 404px;
+    }
+}
+
+.aboutme {
     text-align: center;
     color: #263244;
     width: 730px;
     margin: auto;
 }
+
 .aboutme h2 {
     margin: 110px 0px 32px 0px;
-    font-size: 28px;   
+    font-size: 28px;
     font-weight: bold;
 }
-.author{
+
+.author {
     width: 202px;
     border-radius: 50% 50%;
     margin: 32px 0px;
 }
-.my{
+
+.my {
     text-align: justify;
     padding: 25px 0;
     font-size: 13px;
     color: #3f495a;
-    
 }
-.resume{
+
+.resume button {
     border: 2px solid #6f707e;
     border-radius: 5px;
     width: 153px;
     height: 33px;
     background: none;
-    padding: 7px 0px;
     color: #6f707e;
     margin: 0 auto;
-    font-size: 13 px;   
+    font-size: 13 px;
 }
-.doit{
+
+.resume button {
+    transition: all 0.2s;
+    transform: scale(1)
+}
+
+.resume button:hover {
+    background: #344051;
+    color: white;
+}
+
+.resume button:active {
+    transform: scale(1.1)
+}
+
+.doit {
     font-size: 16px;
     width: 100%;
     height: 520px;
     background: url(../img/ido.jpg) center/cover no-repeat;
+    background-attachment: fixed;
     text-align: center;
     color: #263244;
 }
+
 .ido h2 {
     padding-top: 105px;
     margin: 100px 0px 32px 0px;
-    font-size: 28px;   
+    font-size: 28px;
     font-weight: bold;
 }
+
 .can {
     text-align: center;
     margin: auto;
     width: 1178px;
     height: 155px;
     padding-top: 110px;
+    transition: all 0.2s;
+    transform: scale(1),rotate(0deg);
 }
-.men img{
+.can p:hover{
+    transform: scale(1.2);
+}
+.can h4:hover{
+    transform: scale(1.2);
+}
+
+.men img {
     margin: 0 120px;
+    transition: all 0.2s;
+    transform: rotate(0deg);
 }
+.men img:hover{
+    transform: rotate(360deg);
+}
+
 .ceo {
     margin: 0px 42px 0px 42px;
     width: 209px;
     float: left;
     height: 155px;
 }
+
 .ceo h4 {
     font-size: 22px;
     color: #cf7600;
-    font-weight: bold;   
+    font-weight: bold;
     padding: 40px 0px 20px 0px;
 }
+
 .web {
     margin: 0 42px;
     width: 209px;
     float: left;
     height: 155px;
 }
+
 .web h4 {
     font-size: 22px;
     color: #cf7600;
-    font-weight: bold;   
+    font-weight: bold;
     padding: 40px 0px 20px 0px;
-}.dev {
+}
+
+.dev {
     margin: 0 42px;
     width: 209px;
     float: left;
 }
+
 .dev h4 {
     font-size: 22px;
     color: #cf7600;
-    font-weight: bold;   
+    font-weight: bold;
     padding: 40px 0px 20px 0px;
 }
+
 .mark {
     margin: 0 42px;
     width: 209px;
     float: left;
 }
+
 .mark h4 {
     font-size: 22px;
     color: #cf7600;
-    font-weight: bold;   
+    font-weight: bold;
     padding: 40px 0px 20px 0px;
 }
+
 .keys {
     font-size: 16px;
     width: 100%;
@@ -167,48 +328,77 @@ nav{
     text-align: center;
     color: #384354;
 }
+.google{
+    transition: all 0.2s;
+}
+.google:hover{
+    box-shadow: 10px 10px 40px 5px #53ea93;
+}
 .site {
     width: 1366px;
     margin: auto;
 }
+
 .look h2 {
     padding-top: 110px;
     margin-bottom: 32px;
-    font-size: 28px;   
+    font-size: 28px;
     font-weight: bold;
 }
-.look p{
+
+.look p {
     margin: 20px 0;
 }
-.keys h3{
+
+.keys h3 {
     font-size: 24px;
     font-weight: bold;
 }
+
 .block {
     margin-top: 40px;
     text-align: left;
     height: 190px;
 }
+
 .client {
     float: left;
     margin-right: 84px;
 }
-.client p{
+
+.client p {
     margin: 20px 0;
 }
-.name  p{
+
+.name p {
     margin-top: 14px;
     display: block;
 }
-.client button{
+
+.client button {
     border: 2px solid color#63b5ae;
-    background:#63b5ae;
+    background: #63b5ae;
     border-radius: 5px;
     width: 202px;
     height: 42px;
     font-size: 16px;
     color: white;
 }
+
+.client button {
+    transition: all 0.2s;
+    transform: scale(1)
+}
+
+.client button:hover {
+    background: #6367b5;
+    color: white;
+}
+
+.client button:active {
+    transform: scale(1.1)
+}
+
 .cash {
     margin-top: 210px;
     font-size: 16px;
@@ -216,23 +406,27 @@ nav{
     color: #1c2534;
     font-weight: bold;
 }
-.cash h1{
+
+.cash h1 {
     font-size: 28px;
     font-weight: bold;
 }
-.cash h2{
+
+.cash h2 {
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 25px;
     margin-top: 10px;
 }
+
 .typ {
     margin: auto;
     width: 884px;
     margin-top: 60px;
     text-align: left;
 }
-.typ select{
+
+.typ select {
     margin-bottom: 40px;
     border: 2px solid #eeeeee;
     background: #eeeeee;
@@ -241,61 +435,89 @@ nav{
     font-size: 16px;
     color: #737373;
 }
-.typ table{
+
+.typ table {
     border-spacing: 0 20px;
     font-size: 20px;
 }
+
 .typ th {
     text-align: right;
 }
-.static{
+
+.static {
     text-align: center;
     color: #323e4f;
     background: url(../img/%D1%84%D0%BE%D0%BD%20%D1%81%D1%82%D0%B0%D1%82%D0%B0.jpg) center/cover no-repeat;
+    background-attachment: fixed;
 }
-.static>h2 {
+
+.static > h2 {
     padding: 103px 0 33px 0;
-    font-size: 30px;   
+    font-size: 30px;
     font-weight: bold;
 }
+
 .stata {
     padding-top: 90px;
 }
+
 .stata img {
     margin: 0 117px;
+    transition: all 0.2s;
+    transform: rotate(0deg);
 }
-.xz{
+.stata img:hover{
+    transform: rotate(360deg);
+}
+
+.xz {
     width: 1176px;
     height: 260px;
     margin: 0 auto;
+    transform: scale(1);
 }
-.smile{
+
+.xz h2:hover{
+    transform: scale(1.2);
+}
+.xz h4:hover{
+    transform: scale(1.2);
+}
+
+.smile {
     float: left;
     width: 294px;
 }
+
 .xz h2 {
     font-size: 28px;
     font-weight: bold;
-    padding: 35px 0;
+    margin: 35px 0;
 }
+
 .xz h4 {
     font-size: 16px;
     font-weight: bold;
-    padding-bottom: 100px;
+    margin-bottom: 100px;
     text-transform: uppercase;
 }
-.times{
+
+.times {
     float: left;
     width: 294px
 }
-.okey{
-    float:left;
-    width: 294px
-}
-.cup{
+
+.okey {
     float: left;
     width: 294px
 }
+
+.cup {
+    float: left;
+    width: 294px
+}
+
 .reviews {
     text-align: center;
     color: #243042;
@@ -306,18 +528,27 @@ nav{
     padding-bottom: 90px;
 }
 
-.reviews img{
-        padding: 34px 0 36px 0;
+.reviews img {
+    padding: 34px 0 36px 0;
 }
-.reviews p{
-        padding: 0px 0 40px 0;
+
+.reviews p {
+    padding: 0px 0 40px 0;
 }
-.reviews h2{
-    font-size: 30px;   
+
+.reviews h2 {
+    font-size: 30px;
     font-weight: bold;
 }
-.reviews span{
+
+.reviews span {
     font-weight: bold
+}
+.lukoil{
+    transition:all 0.2s;
+}
+.lukoil:hover{
+    box-shadow: 5px 5px 10px 10px #53ea93;
 }
 .contacts {
     text-align: center;
@@ -327,53 +558,69 @@ nav{
     padding-top: 105px;
     padding-bottom: 67px;
     background: url(../img/%D0%A4%D0%BE%D0%BD.jpg) center/cover no-repeat;
+    background-attachment: fixed;
 }
-.forma{
+
+.forma {
     width: 735px;
     margin: auto;
 }
-.contacts h2{
-    font-size: 20px;   
+
+.contacts h2 {
+    font-size: 20px;
     font-weight: bold;
     padding-bottom: 30px;
 }
-.contacts>p{
-    padding:35px 0 50px 0;
+
+.contacts > p {
+    padding: 35px 0 50px 0;
     width: 735px;
     margin: auto;
 }
-.geo img{
+
+.geo img {
     padding: 0 109px 0 109px;
 }
-.geo p{
+
+.geo p {
     float: left;
     width: 245px;
     padding: 20px 0 50px 0;
 }
-.data{
+
+.data {
     width: 735px;
     margin: auto;
 }
-.data h4{
-    font-size: 13px;   
+
+.data input {
+    padding-left: 5px;
+}
+
+.data h4 {
+    font-size: 13px;
     font-weight: bold;
     padding-bottom: 45px;
 }
-.eba{
+
+.eba {
     margin: 0 10px;
     width: 345px;
     height: 35px;
     background: #d6dae0;
 }
-.data textarea{
+
+.data textarea {
     width: 715px;
     height: 95px;
     margin: 15px 0 30px 0;
     background: #d6dae0;
+    padding: 5px 0 0 5px;
 }
-.send{
+
+.send {
     margin: auto;
-    padding-top: 12.5px;
+    color: white;
     width: 125px;
     height: 45px;
     text-align: center;
@@ -381,20 +628,126 @@ nav{
     background: none;
     border-radius: 5px;
     font-size: 16px;
-    
 }
+
+.send {
+    transition: all 0.2s;
+    transform: scale(1)
+}
+
+.send:hover {
+    background: #db8756;
+    color: white;
+}
+
+.send:active {
+    transform: scale(1.1)
+}
+
 .dostup {
-    width: 470px;
+    width: 500px;
+    height: 70px;
     margin: auto;
 }
-.dostup img{
-    padding: 0 25px;
+
+.dostup button {
+    background: none;
+}
+
+.dostup form {
+    float: left;
+    background: none;
+    padding: 0 26px;
+    margin-right: 5px;
     margin-top: 65px;
 }
-.podval p{
+
+.dostup img {
+    transition: all 0.2s;
+    transform: scale(1), rotate(0deg);
+}
+
+ .dostup img:hover {
+    transform: rotate(360deg); /* Поворачиваем на 360 градусов */
+   }
+
+.dostup img:active {
+    transform: scale(1.2);
+}
+
+.podval p {
     height: 95px;
     background: #354051;
     text-align: center;
     color: white;
     padding: 40px;
+}
+.preloader {
+  /*фиксированное позиционирование*/
+  position: fixed;
+  /* координаты положения */
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  /* фоновый цвет элемента */
+  background: #e0e0e0;
+  /* размещаем блок над всеми элементами на странице (это значение должно быть больше, чем у любого другого позиционированного элемента на странице) */
+  z-index: 10;
+}
+
+.preloader__row {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 70px;
+  height: 70px;
+  margin-top: -35px;
+  margin-left: -35px;
+  text-align: center;
+  animation: preloader-rotate 2s infinite linear;
+}
+
+.preloader__item {
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  background-color: #337ab7;
+  border-radius: 100%;
+  width: 35px;
+  height: 35px;
+  animation: preloader-bounce 2s infinite ease-in-out;
+}
+
+.preloader__item:last-child {
+  top: auto;
+  bottom: 0;
+  animation-delay: -1s;
+}
+
+@keyframes preloader-rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes preloader-bounce {
+
+  0%,
+  100% {
+    transform: scale(0);
+  }
+
+  50% {
+    transform: scale(1);
+  }
+}
+
+.loaded_hiding .preloader {
+  transition: 0.3s opacity;
+  opacity: 0;
+}
+
+.loaded .preloader {
+  display: none;
 }
