@@ -1,5 +1,13 @@
+@font-face {
+	font-family: 'FranklinGot';
+	src: url(../fonts/framd.eot');
+	src: local('☺'), url('../fonts/framd.woff') format('woff'), url('../fonts/framd.ttf') format('truetype'), url('../fonts/framd.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
 body {
-    font-family: arial, sans-serif;
+    font-family: FranklinGot, arial, sans-serif !important; 
 }
 
 nav {
@@ -7,18 +15,20 @@ nav {
     height: 60px;
     background: #344051;
     position: fixed;
-    z-index: 1;
+    z-index: 4;
 }
 
 .logo {
     color: #fff;
     float: left;
-    font-size: 30px;
+    font-size: 18px;
     line-height: 60px;
-    padding-left: 388px;
-    -webkit-animation: comming 2s ease;
-    -o-animation: comming 2s ease;
-    animation: comming 2s ease;
+    -webkit-animation: comming 4s ease;
+    -o-animation: comming 4s ease;
+    animation: comming 4s ease;
+}
+.white-btn:visited{
+    color: white;
 }
 
 main {
@@ -28,15 +38,14 @@ main {
 
 .menu {
     float: left;
-    padding-left: 432px;
 }
 
 .menu li {
     float: left;
     line-height: 60px;
     color: #fff;
-    margin-right: 40px;
-    font-size: 16px;
+    margin-left: 40px;
+    font-size: 14px;
     text-transform: uppercase;
     -webkit-animation: topshift 0.4s ease forwards;
     -o-animation: topshift 0.4s ease forwards;
@@ -52,9 +61,10 @@ main {
 
 .title__container {
     float: left;
-    margin: 432px 0px 0px 404px;
     color: #2c384a;
     text-align: center;
+        width: 100%;
+
     opacity: 0;
     -webkit-animation: titlemove 1s ease forwards;
     -o-animation: titlemove 1s ease forwards;
@@ -65,13 +75,13 @@ main {
 }
 
 .title__container h1 {
-    font-size: 60px;
-    font-weight: bold;
+    font-size: 56px;
+    font-weight: 600;
 }
 
 .title__container h4 {
     margin-top: 40px;
-    font-size: 22px;
+    font-size: 16px;
     color: #79818d;
 }
 
@@ -82,7 +92,7 @@ main {
     background: none;
     border-radius: 5px;
     color: #6d7682;
-    font-size: 13px;
+    font-size: 14px;
     padding: 0 16px;
     margin: 58px 14px 0px 14px;
 }
@@ -92,6 +102,7 @@ main {
     color: white;
     transform: scale(1);
     display: inline-block;
+    text-decoration: none;
 }
 
 .menu li a:visited {
@@ -170,33 +181,53 @@ main {
 
     to {
         opacity: 1;
-        margin-left: 404px;
+        margin-left: 0px;
     }
 }
-
+@media(max-width:991px){
+    .title__container,.title__container h4, .title__container input{
+        color: white;
+        position: relative;
+        z-index: 3;
+    }
+    .main{
+        position: relative;
+    }
+    .main:after{
+        content: "";
+        bottom: 0;
+        top: 0;
+        right: 0;
+        left: 0;
+        position: absolute;
+        background: rgba(0,0,0,0.4)
+    }
+.title__container input{
+border: 2px solid #fff;
+}
+}
 .aboutme {
     text-align: center;
     color: #263244;
-    width: 730px;
     margin: auto;
 }
 
 .aboutme h2 {
-    margin: 110px 0px 32px 0px;
-    font-size: 28px;
+    margin: 110px 0px 30px 0px;
+    font-size: 25px;
     font-weight: bold;
 }
 
 .author {
     width: 202px;
     border-radius: 50% 50%;
-    margin: 32px 0px;
+    margin: 60px 0 0 0;
 }
 
 .my {
     text-align: justify;
-    padding: 25px 0;
-    font-size: 13px;
+    padding: 20px 0 25px 0;
+    font-size: 14px;
     color: #3f495a;
 }
 
@@ -207,13 +238,10 @@ main {
     height: 33px;
     background: none;
     color: #6f707e;
-    margin: 0 auto;
     font-size: 13 px;
-}
-
-.resume button {
+    margin-bottom: 100px;
     transition: all 0.2s;
-    transform: scale(1)
+    transform: scale(1);
 }
 
 .resume button:hover {
@@ -224,32 +252,30 @@ main {
 .resume button:active {
     transform: scale(1.1)
 }
-
 .doit {
-    font-size: 16px;
     width: 100%;
-    height: 520px;
     background: url(../img/ido.jpg) center/cover no-repeat;
     background-attachment: fixed;
     text-align: center;
     color: #263244;
 }
-
 .ido h2 {
-    padding-top: 105px;
     margin: 100px 0px 32px 0px;
-    font-size: 28px;
-    font-weight: bold;
+    font-size: 25px;
+    font-weight: 600;
 }
-
 .can {
-    text-align: center;
-    margin: auto;
-    width: 1178px;
-    height: 155px;
-    padding-top: 110px;
+    font-size: 12.5px;
+    padding-bottom: 95px;
     transition: all 0.2s;
     transform: scale(1),rotate(0deg);
+}
+.can h4{
+    height: 83px;
+    font-size: 14px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    color: #cf7600;
 }
 .can p:hover{
     transform: scale(1.2);
@@ -257,122 +283,56 @@ main {
 .can h4:hover{
     transform: scale(1.2);
 }
-
-.men img {
-    margin: 0 120px;
+.can img {
+    height: 47px;
+    margin-top: 110px;
     transition: all 0.2s;
     transform: rotate(0deg);
 }
-.men img:hover{
+.can img:hover{
     transform: rotate(360deg);
 }
 
-.ceo {
-    margin: 0px 42px 0px 42px;
-    width: 209px;
-    float: left;
-    height: 155px;
-}
-
-.ceo h4 {
-    font-size: 22px;
-    color: #cf7600;
-    font-weight: bold;
-    padding: 40px 0px 20px 0px;
-}
-
-.web {
-    margin: 0 42px;
-    width: 209px;
-    float: left;
-    height: 155px;
-}
-
-.web h4 {
-    font-size: 22px;
-    color: #cf7600;
-    font-weight: bold;
-    padding: 40px 0px 20px 0px;
-}
-
-.dev {
-    margin: 0 42px;
-    width: 209px;
-    float: left;
-}
-
-.dev h4 {
-    font-size: 22px;
-    color: #cf7600;
-    font-weight: bold;
-    padding: 40px 0px 20px 0px;
-}
-
-.mark {
-    margin: 0 42px;
-    width: 209px;
-    float: left;
-}
-
-.mark h4 {
-    font-size: 22px;
-    color: #cf7600;
-    font-weight: bold;
-    padding: 40px 0px 20px 0px;
-}
-
 .keys {
-    font-size: 16px;
-    width: 100%;
-    height: auto;
     text-align: center;
     color: #384354;
 }
-.google{
+.img-fluid{
     transition: all 0.2s;
+    margin-bottom: 40px;
 }
-.google:hover{
+.keys .img-fluid:hover{
     box-shadow: 10px 10px 40px 5px #53ea93;
-}
-.site {
-    width: 1366px;
-    margin: auto;
 }
 
 .look h2 {
     padding-top: 110px;
     margin-bottom: 32px;
-    font-size: 28px;
+    font-size: 25px;
     font-weight: bold;
 }
 
 .look p {
+    font-size: 12.5px;
     margin: 20px 0;
 }
 
 .keys h3 {
-    font-size: 24px;
+    font-size: 19px;
     font-weight: bold;
 }
 
 .block {
-    margin-top: 40px;
     text-align: left;
-    height: 190px;
 }
-
-.client {
-    float: left;
-    margin-right: 84px;
-}
-
 .client p {
+    font-size: 12.5px;
     margin: 20px 0;
 }
 
 .name p {
+    font-size: 15.6px;
     margin-top: 14px;
-    display: block;
 }
 
 .client button {
@@ -383,9 +343,6 @@ main {
     height: 42px;
     font-size: 16px;
     color: white;
-}
-
-.client button {
     transition: all 0.2s;
     transform: scale(1)
 }
@@ -400,27 +357,25 @@ main {
 }
 
 .cash {
-    margin-top: 210px;
-    font-size: 16px;
+    margin-top: 160px;
+    }
+
+.typ h1 {
+    font-size: 34px;
+    font-weight: bold;
     text-align: center;
     color: #1c2534;
-    font-weight: bold;
-}
-
-.cash h1 {
-    font-size: 28px;
-    font-weight: bold;
 }
 
 .cash h2 {
-    font-size: 24px;
+    font-size: 22px;
     font-weight: bold;
     margin-bottom: 25px;
     margin-top: 10px;
 }
 
 .typ {
-    margin: auto;
+    margin-bottom: 30px;
     width: 884px;
     margin-top: 60px;
     text-align: left;
@@ -438,43 +393,62 @@ main {
 
 .typ table {
     border-spacing: 0 20px;
-    font-size: 20px;
+    font-size: 15.6px;
 }
 
 .typ th {
+    font-size:22px;
     text-align: right;
+}
+.cash button {
+    border: 2px solid color#63b5ae;
+    background: #63b5ae;
+    border-radius: 5px;
+    width: 202px;
+    height: 42px;
+    font-size: 16px;
+    color: white;
+    margin-top: 40px;
+}
+
+.cash button {
+    transition: all 0.2s;
+    transform: scale(1)
+}
+
+.cash button:hover {
+    background: #6367b5;
+    color: white;
+}
+
+.cash button:active {
+    transform: scale(1.1)
 }
 
 .static {
+    padding-top: 100px;
     text-align: center;
     color: #323e4f;
     background: url(../img/%D1%84%D0%BE%D0%BD%20%D1%81%D1%82%D0%B0%D1%82%D0%B0.jpg) center/cover no-repeat;
     background-attachment: fixed;
 }
 
-.static > h2 {
-    padding: 103px 0 33px 0;
-    font-size: 30px;
+.static .container > h2 {
+    padding-bottom:33px;
+    font-size: 25px;
     font-weight: bold;
 }
-
-.stata {
-    padding-top: 90px;
-}
-
-.stata img {
-    margin: 0 117px;
+.xz img {
     transition: all 0.2s;
     transform: rotate(0deg);
+    height: 52px;
+    margin-top: 90px;
 }
-.stata img:hover{
+.xz img:hover{
     transform: rotate(360deg);
 }
 
 .xz {
-    width: 1176px;
-    height: 260px;
-    margin: 0 auto;
     transform: scale(1);
 }
 
@@ -485,47 +459,23 @@ main {
     transform: scale(1.2);
 }
 
-.smile {
-    float: left;
-    width: 294px;
-}
-
 .xz h2 {
-    font-size: 28px;
+    font-size: 25px;
     font-weight: bold;
     margin: 35px 0;
 }
 
 .xz h4 {
-    font-size: 16px;
+    font-size: 15.6px;
     font-weight: bold;
     margin-bottom: 100px;
     text-transform: uppercase;
 }
-
-.times {
-    float: left;
-    width: 294px
-}
-
-.okey {
-    float: left;
-    width: 294px
-}
-
-.cup {
-    float: left;
-    width: 294px
-}
-
 .reviews {
     text-align: center;
     color: #243042;
-    font-size: 16px;
-    width: 690px;
-    margin: auto;
     padding-top: 105px;
-    padding-bottom: 90px;
+    padding-bottom: 70px;
 }
 
 .reviews img {
@@ -533,11 +483,12 @@ main {
 }
 
 .reviews p {
+    font-size: 12.5px;
     padding: 0px 0 40px 0;
 }
 
 .reviews h2 {
-    font-size: 30px;
+    font-size: 25px;
     font-weight: bold;
 }
 
@@ -545,6 +496,7 @@ main {
     font-weight: bold
 }
 .lukoil{
+    padding-bottom: 20px;
     transition:all 0.2s;
 }
 .lukoil:hover{
@@ -553,44 +505,29 @@ main {
 .contacts {
     text-align: center;
     color: #fff;
-    font-size: 13px;
-    margin: auto;
     padding-top: 105px;
     padding-bottom: 67px;
     background: url(../img/%D0%A4%D0%BE%D0%BD.jpg) center/cover no-repeat;
     background-attachment: fixed;
 }
-
-.forma {
-    width: 735px;
-    margin: auto;
-}
-
 .contacts h2 {
-    font-size: 20px;
+    font-size: 25px;
     font-weight: bold;
     padding-bottom: 30px;
 }
 
-.contacts > p {
+.svyaz {
     padding: 35px 0 50px 0;
-    width: 735px;
-    margin: auto;
+    font-size: 12.5px;
+    
 }
-
-.geo img {
-    padding: 0 109px 0 109px;
+.geo img{
+    height: 26px;
 }
 
 .geo p {
-    float: left;
-    width: 245px;
     padding: 20px 0 50px 0;
-}
-
-.data {
-    width: 735px;
-    margin: auto;
+    font-size: 12.5px;
 }
 
 .data input {
@@ -598,21 +535,21 @@ main {
 }
 
 .data h4 {
-    font-size: 13px;
+    font-size: 15.6px;
     font-weight: bold;
     padding-bottom: 45px;
 }
 
 .eba {
-    margin: 0 10px;
-    width: 345px;
+    font-size: 12.5px;
+    width: 100%;
     height: 35px;
     background: #d6dae0;
 }
 
 .data textarea {
-    width: 715px;
     height: 95px;
+    font-size: 12.5px;
     margin: 15px 0 30px 0;
     background: #d6dae0;
     padding: 5px 0 0 5px;
@@ -627,7 +564,7 @@ main {
     border: 2px solid white;
     background: none;
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 15.6px;
 }
 
 .send {
@@ -644,22 +581,12 @@ main {
     transform: scale(1.1)
 }
 
-.dostup {
-    width: 500px;
-    height: 70px;
-    margin: auto;
+.dostup form{
+    margin-top: 65px;
 }
 
 .dostup button {
     background: none;
-}
-
-.dostup form {
-    float: left;
-    background: none;
-    padding: 0 26px;
-    margin-right: 5px;
-    margin-top: 65px;
 }
 
 .dostup img {
@@ -676,6 +603,7 @@ main {
 }
 
 .podval p {
+    font-size: 10px;
     height: 95px;
     background: #354051;
     text-align: center;
@@ -683,71 +611,160 @@ main {
     padding: 40px;
 }
 .preloader {
-  /*фиксированное позиционирование*/
   position: fixed;
-  /* координаты положения */
   left: 0;
   top: 0;
   right: 0;
   bottom: 0;
-  /* фоновый цвет элемента */
   background: #e0e0e0;
-  /* размещаем блок над всеми элементами на странице (это значение должно быть больше, чем у любого другого позиционированного элемента на странице) */
-  z-index: 10;
+  z-index: 1000;
 }
-
 .preloader__row {
   position: relative;
   top: 50%;
   left: 50%;
-  width: 70px;
-  height: 70px;
-  margin-top: -35px;
-  margin-left: -35px;
+  width: 100px;
+  height: 100px;
+  margin-top: -60px;
+  margin-left: -60px;
   text-align: center;
-  animation: preloader-rotate 2s infinite linear;
+  animation: preloader-rotate 3.5s infinite linear;
 }
 
 .preloader__item {
   position: absolute;
   display: inline-block;
-  top: 0;
+  left:38px;
   background-color: #337ab7;
   border-radius: 100%;
-  width: 35px;
-  height: 35px;
-  animation: preloader-bounce 2s infinite ease-in-out;
+  width: 20px;
+  height: 20px;
+  }
+.preloader__item:nth-child(1) {
+left: 38px;
+    animation: preloader-translate1 1.6s  infinite linear;
 }
-
+.preloader__item:nth-child(2) {
+left: auto;
+    top:38px;
+    right: 0;
+    animation: preloader-translate2 1.6s 0.4s infinite linear;
+}
+.preloader__item:nth-child(3) {
+  left: auto;
+    bottom: 0;
+    right: 38px;
+    animation: preloader-translate3 1.6s 0.8s infinite linear;
+}
+.preloader__item:nth-child(4) {
+  bottom: 38px;
+    left: 0;
+    animation: preloader-translate4 1.6s 1.2s infinite linear;
+}
+.preloader__item:nth-child(5) {
+    top: 12px;
+    left: 12px;
+    animation: preloader-translate5 1.6s 1.4s infinite linear;
+}
+.preloader__item:nth-child(6) {
+    left: auto;
+    top: 12px;
+    right: 12px;
+    animation: preloader-translate6 1.6s 0.2s infinite linear;
+}
+.preloader__item:nth-child(7) {
+    bottom: 12px;
+    right: 12px;
+    left: auto;
+    animation: preloader-translate7 1.6s 0.6s infinite linear;
+}
+.preloader__item:nth-child(8){
+  bottom:12px;
+    left: 12px;
+    animation: preloader-translate8 1.6s 1s infinite linear;
+}    
+.preloader__item:nth-child(9) {
+left: 38px;
+}
+.preloader__item:nth-child(10) {
+left: auto;
+    top:38px;
+    right: 0;
+}
+.preloader__item:nth-child(11) {
+  left: auto;
+    bottom: 0;
+    right: 38px;
+}
+.preloader__item:nth-child(12) {
+  bottom: 38px;
+    left: 0;
+}
+.preloader__item:nth-child(13) {
+    top: 12px;
+    left: 12px;
+}
+.preloader__item:nth-child(14) {
+    left: auto;
+    top: 12px;
+    right: 12px;
+}
+.preloader__item:nth-child(15) {
+    bottom: 12px;
+    right: 12px;
+    left: auto;
+}
 .preloader__item:last-child {
-  top: auto;
-  bottom: 0;
-  animation-delay: -1s;
+  bottom:12px;
+    left: 12px;
 }
-
 @keyframes preloader-rotate {
-  100% {
-    transform: rotate(360deg);
-  }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
-@keyframes preloader-bounce {
-
-  0%,
-  100% {
-    transform: scale(0);
-  }
-
-  50% {
-    transform: scale(1);
+@keyframes preloader-translate1 {
+  100%{
+    transform: translate(0,-1000px);
   }
 }
-
-.loaded_hiding .preloader {
-  transition: 0.3s opacity;
-  opacity: 0;
+@keyframes preloader-translate2 {
+  100%{
+    transform: translate(1000px,0);
+  }
 }
-
+@keyframes preloader-translate3 {
+  100%{
+    transform: translate(0px,1000px)
+  }
+}
+@keyframes preloader-translate4 {
+  100%{
+    transform: translate(-1000px,0px)
+  }
+}
+@keyframes preloader-translate5 {
+100%{
+    transform: translate(-1000px,-1000px)
+  }
+}
+@keyframes preloader-translate6 {
+  100%{
+    transform: translate(1000px,-1000px)
+  }
+}
+@keyframes preloader-translate7 {
+  100%{
+    transform: translate(1000px,1000px)
+  }
+}
+@keyframes preloader-translate8 {
+100%{
+    transform: translate(-1000px,1000px)
+  }
+    
+}
 .loaded .preloader {
   display: none;
 }
